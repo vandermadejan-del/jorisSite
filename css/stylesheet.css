@@ -1,0 +1,328 @@
+* {
+    margin: 0 auto;
+    text-decoration: none;
+
+}
+
+header,
+footer {
+    margin: 0;
+    height: 10%;
+    flex-shrink: 0;
+    background-color: rgb(34, 34, 34);
+    display: flex;
+
+}
+
+footer {
+    margin-top: 20px;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    background-color: rgb(53, 53, 53);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+main {
+    margin: 0;
+    background-color: rgb(53, 53, 53);
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+
+    /* fill the remaining space */
+}
+
+
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "Coiny", system-ui;
+}
+
+nav a {
+    color: white;
+    font-size: 25px;
+}
+
+h1 {
+    font-family: "Permanent Marker", cursive;
+    animation: redpulse 1s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes redpulse {
+    0% {
+        box-shadow: 0 1px 0px red;
+    }
+
+    50% {
+        box-shadow: 0 2px 0px orangered;
+    }
+
+    100% {
+        box-shadow: 0 1px 0px yellow;
+    }
+
+}
+
+h1,
+h2,
+p,
+label {
+    color: white;
+
+}
+
+p {
+    font-family: "Fredoka", sans-serif;
+    font-size: 1.2rem;
+}
+
+img {
+    border-radius: 4px;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.fireBorder {
+    border: 3px solid rgb(0, 217, 255);
+    box-shadow: 0 0 4px 4px rgb(0, 119, 255)
+}
+
+.Logo-Title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.wrapperColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapperRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.TextRows {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 50px;
+    gap: 15px;
+    width: 500px;
+}
+
+form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 120px;
+}
+
+.formLayout {
+    margin-bottom: 35px;
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    row-gap: 10px;
+
+}
+
+.FormQuestion {
+    display: flex;
+    width: 300px;
+    justify-content: flex-start;
+
+
+}
+
+input {
+    max-width: 140px;
+    flex: 1;
+
+}
+
+label {
+    width: 150px;
+    text-align: left;
+}
+
+#Submit {
+
+    width: 300px;
+}
+
+.ProductenPagina {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.product {
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(32, 32, 32);
+    border-radius: 10px;
+    border: 2px black solid;
+
+}
+
+/* put text in over the image */
+.relative {
+    position: relative;
+}
+
+.lowmiddleposition {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+}
+
+.ProductTextFrame {
+    background-color: rgb(58, 58, 58);
+    border: 5px rgb(68, 68, 68) solid;
+    border-radius: 7px;
+    margin: 20px;
+    height: 60%;
+    align-content: center;
+}
+
+.hoverableImage {
+    border: 2px red solid;
+    animation: idlefireEffect 1.5s ease-in-out infinite alternate;
+}
+
+.hoverableImage:hover {
+    animation: fireEffect 0.8s ease-in-out infinite alternate;
+}
+
+.centerImg {
+    position: fixed;
+    top: 0.5;
+    width: 500px;
+    height: 500px;
+
+
+}
+
+@keyframes idlefireEffect {
+    0% {
+        border-color: #ff1a00;
+        box-shadow: 0 0 10px #ff1a00;
+    }
+
+    /* second shadows in evry box shadow  */
+    50% {
+        border-color: #ff6a00;
+        box-shadow: 0 0 20px #ff6a00;
+    }
+
+    100% {
+        border-color: #ffb300;
+        box-shadow: 0 0 30px #ffb300;
+    }
+}
+
+@keyframes fireEffect {
+    0% {
+        border-color: #ff1a00;
+        box-shadow: 0 0 10px #ff1a00, 0 0 20px #ff4500;
+    }
+
+    /* second shadows in evry box shadow  */
+    50% {
+        border-color: #ff6a00;
+        box-shadow: 0 0 20px #ff6a00, 0 0 40px #ff8c00;
+    }
+
+    100% {
+        border-color: #ffb300;
+        box-shadow: 0 0 30px #ffb300, 0 0 60px #ff4500, 0 0 90px #ff1a00;
+    }
+
+}
+
+@media (max-width: 555px) {
+    nav a {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 3cqmax;
+    }
+
+    header,
+    footer {
+        height: 55px;
+    }
+
+    .wrapperRow {
+        width: 100%;
+    }
+
+    .TextRows {
+        margin: 7px;
+        width: 100%;
+    }
+
+    .fireBorder {
+        width: 150px;
+        height: 150px;
+    }
+
+    .wrapperColumn {
+        width: 100%;
+
+    }
+
+    .product {
+        width: 95%;
+    }
+
+    .ProductTextFrame {
+        height: fit-content;
+    }
+
+    .formLayout {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
+    form {
+        margin: 0;
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    img {
+        height: 100px;
+        width: 100px;
+    }
+
+
+}

@@ -1,0 +1,23 @@
+Dag 1
+WireFrame's + stijlgids maken en versturen naar joris
+
+Dag 2
+html skelet maken, logisch folder structuur. header php + footer php + body in css stijlen. als tijd over homepage en 
+
+Dag 3-4
+all het css en layout van alle pagina's mooi maken.
+
+Dag 4-5
+en interactieve fotogalerij met java script
+formulier verwerking voor bbq masterclass met php post methode, na succesvolle 
+invulling een dynamische bevestigingspagina. 
+
+
+Dag 6
+laatste testjes.
+online zetten.
+
+
+
+
+

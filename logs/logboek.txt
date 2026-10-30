@@ -1,0 +1,13 @@
+05-10-2026
+WireFrame gemaakt en de basis van de stijlgids en gestuurd naar joris
+
+14-10-2026
+Html skelet het folder structuur php templates gemaakt. en css footer header en main gemaakt
+
+16-10-2026
+product pagina gemaakt en masterclass pagina
+formulier met post methode gemaakt. bedankt pagina nog niet gestijld.
+
+30-10-2026
+alle pagina's support nu ook mobiel
+en online gezet
