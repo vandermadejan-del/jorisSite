@@ -68,15 +68,10 @@
         // const clickableImage = document.getElementById('clickableImage')
         const JavaStyleButton = document.getElementById('JavaStyleButton')
         const hotterfireGui = document.querySelectorAll('.hoverableImage')
-        const clickableImg = document.querySelectorAll('.clickableImg')
-        
+    
         let cool = false
-        clickableImg.forEach((img) => {
-            img.addEventListener('click', () =>
-        {
-            
-        })
-        })
+      
+        
         JavaStyleButton.addEventListener('click', () => {
             if (cool === false) {
                 hotterfireGui.forEach((img) =>{

@@ -263,6 +263,17 @@ label {
     }
 
 }
+.bedanktPagina{
+    width: 100%;
+    align-items: center;
+    height: fit-content;
+    background-color: black;
+
+}
+.bedanktPagina p{
+    font-size: 30px;
+    color: white;
+}
 
 @media (max-width: 555px) {
     nav a {
@@ -303,8 +314,8 @@ label {
 
     .ProductTextFrame {
         height: fit-content;
+        
     }
-
     .formLayout {
         width: 100%;
         height: 100%;
@@ -323,6 +334,4 @@ label {
         height: 100px;
         width: 100px;
     }
-
-
 }
